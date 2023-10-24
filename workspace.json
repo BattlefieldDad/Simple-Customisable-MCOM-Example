@@ -1,0 +1,2909 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "modBlock",
+        "id": "nOfB1xooyQ1R5bd{g[ZX",
+        "x": 1293,
+        "y": -61,
+        "inputs": {
+          "RULES": {
+            "block": {
+              "type": "ruleBlock",
+              "id": "Z%h[3OiLW+lXvAw).JgI",
+              "extraState": {
+                "isOngoingEvent": true
+              },
+              "fields": {
+                "NAME": "setScoreToWin",
+                "EVENTTYPE": "Ongoing",
+                "OBJECTTYPE": "Global"
+              },
+              "inputs": {
+                "ACTIONS": {
+                  "block": {
+                    "type": "SetTargetScore",
+                    "id": "f@v%8OFJl0cCgxkS{2EO",
+                    "inputs": {
+                      "VALUE-0": {
+                        "block": {
+                          "type": "Number",
+                          "id": "/G)!B7H|[eFy)0KD-)gR",
+                          "fields": {
+                            "NUM": 3
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "EnableDefaultScoring",
+                        "id": "C#trd$blOChEkj%s0.1G",
+                        "inputs": {
+                          "VALUE-0": {
+                            "block": {
+                              "type": "Boolean",
+                              "id": "[xT.:vkFoM3Xf?$U^TMz",
+                              "fields": {
+                                "BOOL": "FALSE"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "ruleBlock",
+                  "id": "7KaXA164XL|?Pk1-hmAM",
+                  "extraState": {
+                    "isOngoingEvent": true
+                  },
+                  "fields": {
+                    "NAME": "initialiseTeamMCOMInfo",
+                    "EVENTTYPE": "Ongoing",
+                    "OBJECTTYPE": "Global"
+                  },
+                  "inputs": {
+                    "ACTIONS": {
+                      "block": {
+                        "type": "SetVariable",
+                        "id": ":@9t.D`Yu/18RXiNJ(Ko",
+                        "inputs": {
+                          "VALUE-0": {
+                            "block": {
+                              "type": "variableReferenceBlock",
+                              "id": "Z8Ey@+vn[|3]G:{!vMjH",
+                              "extraState": {
+                                "isObjectVar": true
+                              },
+                              "fields": {
+                                "OBJECTTYPE": "TeamId",
+                                "VAR": {
+                                  "id": "Af/]xC-27o?f.4N7|f[f"
+                                }
+                              },
+                              "inputs": {
+                                "OBJECT": {
+                                  "block": {
+                                    "type": "GetTeamId",
+                                    "id": "L1Y^ywJ-7u^(4uF![wlk",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "Number",
+                                          "id": "9x1XRJr2N1.V+L|M+|fa",
+                                          "fields": {
+                                            "NUM": 1
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "VALUE-1": {
+                            "block": {
+                              "type": "GetCapturePoint",
+                              "id": "G@T6I5EyTDU]sb}@0;Sc",
+                              "inputs": {
+                                "VALUE-0": {
+                                  "block": {
+                                    "type": "MCOMsItem",
+                                    "id": "18o6r#,FTv,KffM?+R3F",
+                                    "fields": {
+                                      "VALUE-0": "MCOMs",
+                                      "VALUE-1": "A"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "SetVariable",
+                            "id": ")S3t3SxbJP;mQ:t~qdE^",
+                            "inputs": {
+                              "VALUE-0": {
+                                "block": {
+                                  "type": "variableReferenceBlock",
+                                  "id": "C[U2oo,Z%%|c{QHJDd6$",
+                                  "extraState": {
+                                    "isObjectVar": true
+                                  },
+                                  "fields": {
+                                    "OBJECTTYPE": "TeamId",
+                                    "VAR": {
+                                      "id": "Af/]xC-27o?f.4N7|f[f"
+                                    }
+                                  },
+                                  "inputs": {
+                                    "OBJECT": {
+                                      "block": {
+                                        "type": "GetTeamId",
+                                        "id": "7rBKlxK{5*?8nUGLSrOk",
+                                        "inputs": {
+                                          "VALUE-0": {
+                                            "block": {
+                                              "type": "Number",
+                                              "id": "%yvul_Wr:OH]x0X8p6tO",
+                                              "fields": {
+                                                "NUM": 2
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "VALUE-1": {
+                                "block": {
+                                  "type": "GetCapturePoint",
+                                  "id": "Jp`LmLZ6r8y*!MU]1=94",
+                                  "inputs": {
+                                    "VALUE-0": {
+                                      "block": {
+                                        "type": "MCOMsItem",
+                                        "id": "B_x)).TcWFn#uK%P];s?",
+                                        "fields": {
+                                          "VALUE-0": "MCOMs",
+                                          "VALUE-1": "D"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "ruleBlock",
+                      "id": "}$,rS~8+efEMs;hVH*gI",
+                      "extraState": {
+                        "isOngoingEvent": false
+                      },
+                      "fields": {
+                        "NAME": "initialiseAllMCOMS",
+                        "EVENTTYPE": "OnGameModeStarted"
+                      },
+                      "inputs": {
+                        "ACTIONS": {
+                          "block": {
+                            "type": "subroutineInstanceBlock",
+                            "id": "kW9$W{-kt/+q%xd,y(;M",
+                            "extraState": {
+                              "subroutineName": "initialiseMCOMs",
+                              "parameters": []
+                            },
+                            "fields": {
+                              "SUBROUTINE_NAME": "initialiseMCOMs"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "SetCapturePointOwner",
+                                "id": "$=y3a=oEwZbf,8S6Eoxk",
+                                "inputs": {
+                                  "VALUE-0": {
+                                    "block": {
+                                      "type": "GetCapturePoint",
+                                      "id": "TS94NR]pML@ya)2z%mac",
+                                      "inputs": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "MCOMsItem",
+                                            "id": "e9Sn@QDglLmdZRZzM/Z8",
+                                            "fields": {
+                                              "VALUE-0": "MCOMs",
+                                              "VALUE-1": "A"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "VALUE-1": {
+                                    "block": {
+                                      "type": "GetTeamId",
+                                      "id": "yd=_PQ!KW~_Z1:=_-C^f",
+                                      "inputs": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "Number",
+                                            "id": "H(7~5+Y=(L_.H+|gI!9J",
+                                            "fields": {
+                                              "NUM": 1
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "SetCapturePointOwner",
+                                    "id": "hKy$4XvS+SK{p@8^l,;~",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "GetCapturePoint",
+                                          "id": "wR-CnYHdo5GwV2;%IlV3",
+                                          "inputs": {
+                                            "VALUE-0": {
+                                              "block": {
+                                                "type": "MCOMsItem",
+                                                "id": "~`yDPmbMRYC#4$t6$NE5",
+                                                "fields": {
+                                                  "VALUE-0": "MCOMs",
+                                                  "VALUE-1": "B"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "VALUE-1": {
+                                        "block": {
+                                          "type": "GetTeamId",
+                                          "id": "[P(Le6@V3wUX.bp+T],/",
+                                          "inputs": {
+                                            "VALUE-0": {
+                                              "block": {
+                                                "type": "Number",
+                                                "id": "nvp;oNHL}!J{7TJSepra",
+                                                "fields": {
+                                                  "NUM": 1
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "SetCapturePointOwner",
+                                        "id": "]Zu6{5:awDuG/D(7Sz($",
+                                        "inputs": {
+                                          "VALUE-0": {
+                                            "block": {
+                                              "type": "GetCapturePoint",
+                                              "id": "%W}d`)S^?59n^^|/s9%L",
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "MCOMsItem",
+                                                    "id": "LwPx;VeU*uacCBZ}e3*[",
+                                                    "fields": {
+                                                      "VALUE-0": "MCOMs",
+                                                      "VALUE-1": "C"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "VALUE-1": {
+                                            "block": {
+                                              "type": "GetTeamId",
+                                              "id": ",I)k3TQLU;26*_L$br=p",
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "Number",
+                                                    "id": "l[#~S;TSeGeruJp|hj3s",
+                                                    "fields": {
+                                                      "NUM": 1
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "SetCapturePointOwner",
+                                            "id": "PL7u,IU_2?J*R-0WR4!k",
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "GetCapturePoint",
+                                                  "id": "a2LVfwS@(PiR?lpo/+`)",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "MCOMsItem",
+                                                        "id": "+#1KlThONVW@N1hER{Cw",
+                                                        "fields": {
+                                                          "VALUE-0": "MCOMs",
+                                                          "VALUE-1": "D"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-1": {
+                                                "block": {
+                                                  "type": "GetTeamId",
+                                                  "id": ".}rwoTR,ynMn+pKTwURK",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "Number",
+                                                        "id": "@~hqReBX5w(!#)y9fD(7",
+                                                        "fields": {
+                                                          "NUM": 2
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "SetCapturePointOwner",
+                                                "id": "9u4Y#xy-S6(9:CfeloSt",
+                                                "inputs": {
+                                                  "VALUE-0": {
+                                                    "block": {
+                                                      "type": "GetCapturePoint",
+                                                      "id": "k/FuhZd_w$h7Ez%0{df}",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "MCOMsItem",
+                                                            "id": "qe#88bWU)]nY;CX{|gHA",
+                                                            "fields": {
+                                                              "VALUE-0": "MCOMs",
+                                                              "VALUE-1": "E"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "GetTeamId",
+                                                      "id": "n8-GKNuPJNx@mpsYZCE;",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "Number",
+                                                            "id": "{[*B@h1QY$%I3bU{)cDY",
+                                                            "fields": {
+                                                              "NUM": 2
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "SetCapturePointOwner",
+                                                    "id": ":I|4k^Q:F{~#?m~bJ,W|",
+                                                    "inputs": {
+                                                      "VALUE-0": {
+                                                        "block": {
+                                                          "type": "GetCapturePoint",
+                                                          "id": "]^e8}.f+@^-7AVQ[H(Pr",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "MCOMsItem",
+                                                                "id": "]riz-F*8-sHff}P}*_q1",
+                                                                "fields": {
+                                                                  "VALUE-0": "MCOMs",
+                                                                  "VALUE-1": "F"
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE-1": {
+                                                        "block": {
+                                                          "type": "GetTeamId",
+                                                          "id": "5YUUrJ6xc8O%|#lVv;J!",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "Number",
+                                                                "id": "-jXc-mas2MOV7MV,:2n{",
+                                                                "fields": {
+                                                                  "NUM": 2
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "next": {
+                                                      "block": {
+                                                        "type": "EnableObjective",
+                                                        "id": ":Bsa@s-iG-I45$R${`=~",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "GetCapturePoint",
+                                                              "id": "6Zb-9o:FHo~9mU`l1{=M",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "MCOMsItem",
+                                                                    "id": "]c;r1A?/bkd)W(*^{7-Y",
+                                                                    "fields": {
+                                                                      "VALUE-0": "MCOMs",
+                                                                      "VALUE-1": "A"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE-1": {
+                                                            "block": {
+                                                              "type": "Boolean",
+                                                              "id": "ryGv^cw!+8a|t.P1rl;w",
+                                                              "fields": {
+                                                                "BOOL": "TRUE"
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "next": {
+                                                          "block": {
+                                                            "type": "EnableObjective",
+                                                            "id": "_iUHu3W|o,bU|!}pU]rd",
+                                                            "inputs": {
+                                                              "VALUE-0": {
+                                                                "block": {
+                                                                  "type": "GetCapturePoint",
+                                                                  "id": "XwbMcjsev0%4(qOjZn8:",
+                                                                  "inputs": {
+                                                                    "VALUE-0": {
+                                                                      "block": {
+                                                                        "type": "MCOMsItem",
+                                                                        "id": "rPJ!C6uV|`3NWBr38aiC",
+                                                                        "fields": {
+                                                                          "VALUE-0": "MCOMs",
+                                                                          "VALUE-1": "D"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "VALUE-1": {
+                                                                "block": {
+                                                                  "type": "Boolean",
+                                                                  "id": "Arytzx#gB-l1)5y~KM]|",
+                                                                  "fields": {
+                                                                    "BOOL": "TRUE"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "ruleBlock",
+                          "id": "cAX975N[I~[I5w?d9/s[",
+                          "extraState": {
+                            "isOngoingEvent": false
+                          },
+                          "fields": {
+                            "NAME": "displayGameState",
+                            "EVENTTYPE": "OnPlayerDeployed"
+                          },
+                          "inputs": {
+                            "ACTIONS": {
+                              "block": {
+                                "type": "While",
+                                "id": "$HT`rC^sLp!9|}s7(6Jk",
+                                "inputs": {
+                                  "VALUE-0": {
+                                    "block": {
+                                      "type": "GetSoldierState",
+                                      "id": "dzLl!k.S{nf*AwC^$8R[",
+                                      "inputs": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "EventPlayer",
+                                            "id": "sVCJ;.+I:#zaAl`3`BV$"
+                                          }
+                                        },
+                                        "VALUE-1": {
+                                          "block": {
+                                            "type": "SoldierStateBoolItem",
+                                            "id": "NA/UR!@7cac%-PhpN/KZ",
+                                            "fields": {
+                                              "VALUE-0": "SoldierStateBool",
+                                              "VALUE-1": "IsAlive"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "DO": {
+                                    "block": {
+                                      "type": "DisplayCustomNotificationMessage",
+                                      "id": "]$.r~EDlMy+$Ym8lbgJD",
+                                      "inputs": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "Message",
+                                            "id": "-*}2`%P]am$!Wqbr?u3@",
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "Text",
+                                                  "id": "=5;KPi(%Xp)pG`A$lV)z",
+                                                  "fields": {
+                                                    "TEXT": "LEFT TO DESTROY: {}"
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-1": {
+                                                "block": {
+                                                  "type": "Subtract",
+                                                  "id": "jmpE^U_$brbRd_j3/`BI",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "Number",
+                                                        "id": "a4M_|Q9QR2E)azLdgss*",
+                                                        "fields": {
+                                                          "NUM": 3
+                                                        }
+                                                      }
+                                                    },
+                                                    "VALUE-1": {
+                                                      "block": {
+                                                        "type": "GetGamemodeScore",
+                                                        "id": "gIfySC^f32+WU974bTWq",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "GetTeamId",
+                                                              "id": "$,e9^Yuk@4GK_)J`n+S,",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "EventPlayer",
+                                                                    "id": "?YL{Sy$eoxUsFdJ)Y$J~"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "VALUE-1": {
+                                          "block": {
+                                            "type": "CustomMessagesItem",
+                                            "id": "A5-L1L5;a[hyif2a9(63",
+                                            "fields": {
+                                              "VALUE-0": "CustomMessages",
+                                              "VALUE-1": "MessageText1"
+                                            }
+                                          }
+                                        },
+                                        "VALUE-2": {
+                                          "block": {
+                                            "type": "Number",
+                                            "id": "bJv}zG69X^$.W*sLrQB@",
+                                            "fields": {
+                                              "NUM": -1
+                                            }
+                                          }
+                                        },
+                                        "VALUE-3": {
+                                          "block": {
+                                            "type": "EventPlayer",
+                                            "id": "#cNaezx+9W4WcGe0e#Nu"
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "DisplayCustomNotificationMessage",
+                                          "id": "3:ixdk0*I{#F}U0D0l74",
+                                          "inputs": {
+                                            "VALUE-0": {
+                                              "block": {
+                                                "type": "Message",
+                                                "id": ";lS2,!+JICt??)T%_akQ",
+                                                "inputs": {
+                                                  "VALUE-0": {
+                                                    "block": {
+                                                      "type": "Text",
+                                                      "id": ":9b|YqE]*Xq$T]7KppQ^",
+                                                      "fields": {
+                                                        "TEXT": "CURRENT MCOM {} SECONDS FUSE TIME REMAINING"
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "RoundToInteger",
+                                                      "id": "b:6C=n.A?o1#G7tMZlk*",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "GetRemainingFuseTime",
+                                                            "id": ";LiVd1?W?Kjm5Lg?=i4L",
+                                                            "inputs": {
+                                                              "VALUE-0": {
+                                                                "block": {
+                                                                  "type": "GetVariable",
+                                                                  "id": "c+knj{-K=`Qd}7*_I@t)",
+                                                                  "inputs": {
+                                                                    "VALUE-0": {
+                                                                      "block": {
+                                                                        "type": "variableReferenceBlock",
+                                                                        "id": "(}*=T:cp3~M7re-QOHIH",
+                                                                        "extraState": {
+                                                                          "isObjectVar": true
+                                                                        },
+                                                                        "fields": {
+                                                                          "OBJECTTYPE": "TeamId",
+                                                                          "VAR": {
+                                                                            "id": "Af/]xC-27o?f.4N7|f[f"
+                                                                          }
+                                                                        },
+                                                                        "inputs": {
+                                                                          "OBJECT": {
+                                                                            "block": {
+                                                                              "type": "GetTeamId",
+                                                                              "id": "=f]VYpdDpWj.Q~~{MdSY",
+                                                                              "inputs": {
+                                                                                "VALUE-0": {
+                                                                                  "block": {
+                                                                                    "type": "EventPlayer",
+                                                                                    "id": "3$kRPnM=7(*U}sUs=_9;"
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "VALUE-1": {
+                                              "block": {
+                                                "type": "CustomMessagesItem",
+                                                "id": "-@l}in{ZRQ(#:5q0b#,*",
+                                                "fields": {
+                                                  "VALUE-0": "CustomMessages",
+                                                  "VALUE-1": "MessageText2"
+                                                }
+                                              }
+                                            },
+                                            "VALUE-2": {
+                                              "block": {
+                                                "type": "Number",
+                                                "id": "|9zFm1K-L@1Y#d@KV)nM",
+                                                "fields": {
+                                                  "NUM": -1
+                                                }
+                                              }
+                                            },
+                                            "VALUE-3": {
+                                              "block": {
+                                                "type": "EventPlayer",
+                                                "id": "~L6!uICf#|^5)ex4`YB@"
+                                              }
+                                            }
+                                          },
+                                          "next": {
+                                            "block": {
+                                              "type": "Wait",
+                                              "id": "f+l:a3VBOFBT,BJfkGfs",
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "Number",
+                                                    "id": "jzHz/X2,b[d(O%O]tl{#",
+                                                    "fields": {
+                                                      "NUM": 1
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "ruleBlock",
+                              "id": "Qxj{iz#6B^r`sk5lC`DK",
+                              "extraState": {
+                                "isOngoingEvent": false
+                              },
+                              "fields": {
+                                "NAME": "MCOMActionTrigger",
+                                "EVENTTYPE": "OnMCOMArmed"
+                              },
+                              "inputs": {
+                                "ACTIONS": {
+                                  "block": {
+                                    "type": "DisplayCustomNotificationMessage",
+                                    "id": "#?Wvuc=MRmk%JFfi4$8G",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "Message",
+                                          "id": "e4g9A.0c#SI@_=h,7mz3",
+                                          "inputs": {
+                                            "VALUE-0": {
+                                              "block": {
+                                                "type": "Text",
+                                                "id": "NmGi]S{JE`k!9JQ!NV8M",
+                                                "fields": {
+                                                  "TEXT": "{} ARMED AN MCOM"
+                                                }
+                                              }
+                                            },
+                                            "VALUE-1": {
+                                              "block": {
+                                                "type": "EventPlayer",
+                                                "id": "61~bl?s2pdO=i~:(h+CP"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "VALUE-1": {
+                                        "block": {
+                                          "type": "CustomMessagesItem",
+                                          "id": "J1)Twh@7`#!AEuzq$z5-",
+                                          "fields": {
+                                            "VALUE-0": "CustomMessages",
+                                            "VALUE-1": "HeaderText"
+                                          }
+                                        }
+                                      },
+                                      "VALUE-2": {
+                                        "block": {
+                                          "type": "Number",
+                                          "id": "EAPx$a+[,FbY|pbE#`[d",
+                                          "fields": {
+                                            "NUM": 5
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "ruleBlock",
+                                  "id": "6@@KI,C?{5n%`Y+%@G`p",
+                                  "extraState": {
+                                    "isOngoingEvent": false
+                                  },
+                                  "fields": {
+                                    "NAME": "MCOMActionTrigger",
+                                    "EVENTTYPE": "OnMCOMDefused"
+                                  },
+                                  "inputs": {
+                                    "ACTIONS": {
+                                      "block": {
+                                        "type": "DisplayCustomNotificationMessage",
+                                        "id": "9-0O^Ap~D5WqTKK2g=qS",
+                                        "inputs": {
+                                          "VALUE-0": {
+                                            "block": {
+                                              "type": "Message",
+                                              "id": "lZRD#!s~QS8@eE%{ep_7",
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "Text",
+                                                    "id": ";xWA:I=/8rL2=xxmQ]C@",
+                                                    "fields": {
+                                                      "TEXT": "{} DEFUSED AN MCOM"
+                                                    }
+                                                  }
+                                                },
+                                                "VALUE-1": {
+                                                  "block": {
+                                                    "type": "EventPlayer",
+                                                    "id": "|^@h=)5ea|Jt#Z/ZE26S"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "VALUE-1": {
+                                            "block": {
+                                              "type": "CustomMessagesItem",
+                                              "id": "LH2!HTAzg:L5Zlhr%d7B",
+                                              "fields": {
+                                                "VALUE-0": "CustomMessages",
+                                                "VALUE-1": "HeaderText"
+                                              }
+                                            }
+                                          },
+                                          "VALUE-2": {
+                                            "block": {
+                                              "type": "Number",
+                                              "id": "Kn/ierT~oUY=b`fZt+a=",
+                                              "fields": {
+                                                "NUM": 5
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "TriggerAudio",
+                                            "id": "ew,VWaOV=BfK*15L-0Na",
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "SoundsItem",
+                                                  "id": "OaPJ[(2M%_^7%5NYnJXq",
+                                                  "fields": {
+                                                    "VALUE-0": "Sounds",
+                                                    "VALUE-1": "ObjectiveCompleted_01"
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-1": {
+                                                "block": {
+                                                  "type": "GetTeamId",
+                                                  "id": "B1e)$h0Vp;F+cy0HHY}Y",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "EventPlayer",
+                                                        "id": "aS,mmX_E{1L`*3ojXE^*"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "ruleBlock",
+                                      "id": "[Yim@7ll|q1LPkT.C@,8",
+                                      "extraState": {
+                                        "isOngoingEvent": true
+                                      },
+                                      "fields": {
+                                        "NAME": "triggerIfAnMCOMChangesStateTo",
+                                        "EVENTTYPE": "Ongoing",
+                                        "OBJECTTYPE": "MCOM"
+                                      },
+                                      "inputs": {
+                                        "CONDITIONS": {
+                                          "block": {
+                                            "type": "conditionBlock",
+                                            "id": "te9c~v`]`f}0**4}rjeG",
+                                            "inputs": {
+                                              "CONDITION": {
+                                                "block": {
+                                                  "type": "GetMCOMState",
+                                                  "id": ";wBHj*IP!V;3l*19fZX!",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "EventMCOM",
+                                                        "id": "ugxha=G5IttbperaejMJ"
+                                                      }
+                                                    },
+                                                    "VALUE-1": {
+                                                      "block": {
+                                                        "type": "MCOMStateBoolItem",
+                                                        "id": "bttie[|e{vqZeR%DyK5[",
+                                                        "fields": {
+                                                          "VALUE-0": "MCOMStateBool",
+                                                          "VALUE-1": "IsArming"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "conditionBlock",
+                                                "id": "A!AnU#aX-{q!]iWBaTH@",
+                                                "inputs": {
+                                                  "CONDITION": {
+                                                    "block": {
+                                                      "type": "Equals",
+                                                      "id": "BP%VWriEP8(rP|+jhaTn",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "GetCurrentOwnerTeamID",
+                                                            "id": "d?[mxf*DB#Xbe=WITk/Q",
+                                                            "inputs": {
+                                                              "VALUE-0": {
+                                                                "block": {
+                                                                  "type": "EventMCOM",
+                                                                  "id": "5L=p2lJmv_A2+PI`vJjI"
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "VALUE-1": {
+                                                          "block": {
+                                                            "type": "GetTeamId",
+                                                            "id": "-9+}tJfvAwQ#ww0h`zh1",
+                                                            "inputs": {
+                                                              "VALUE-0": {
+                                                                "block": {
+                                                                  "type": "Number",
+                                                                  "id": "yN.Fs9/WL84c1!Re(:4o",
+                                                                  "fields": {
+                                                                    "NUM": 1
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "ACTIONS": {
+                                          "block": {
+                                            "type": "ShowEventGameModeMessage",
+                                            "id": "@)E6-dJq-`^63Za)P{$F",
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "Message",
+                                                  "id": "-f`hD+JK%,_KmKEqwm4G",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "Text",
+                                                        "id": "/y|hh3wbf6+QU66vUeA?",
+                                                        "fields": {
+                                                          "TEXT": "YOUR MCOM IS BEING ARMED!!"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-1": {
+                                                "block": {
+                                                  "type": "GetTeamId",
+                                                  "id": "ZCiVA%eyGPj$h7`%)J5?",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "Number",
+                                                        "id": "4`PMV-Kk/5|{f][}cB`v",
+                                                        "fields": {
+                                                          "NUM": 1
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "ShowEventGameModeMessage",
+                                                "id": "QV}fVf!=:,P%w,zje*=F",
+                                                "inputs": {
+                                                  "VALUE-0": {
+                                                    "block": {
+                                                      "type": "Message",
+                                                      "id": "7tAXHv!)HNhyW~NA+6$K",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "Text",
+                                                            "id": ";B)Z3fky%Z7s{og4{__+",
+                                                            "fields": {
+                                                              "TEXT": "YOUR TEAM IS ARMING AN MCOM"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "GetTeamId",
+                                                      "id": "HAH)Hp#]wE=f+-7)_l.z",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "Number",
+                                                            "id": "zwp}d#~Q6.T?Q9Lub+Zx",
+                                                            "fields": {
+                                                              "NUM": 2
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "ruleBlock",
+                                          "id": "MjDnUN9!:k[Yv/dO;tA`",
+                                          "extraState": {
+                                            "isOngoingEvent": true
+                                          },
+                                          "fields": {
+                                            "NAME": "triggerIfAnMCOMChangesStateTo",
+                                            "EVENTTYPE": "Ongoing",
+                                            "OBJECTTYPE": "MCOM"
+                                          },
+                                          "inputs": {
+                                            "CONDITIONS": {
+                                              "block": {
+                                                "type": "conditionBlock",
+                                                "id": "Z$m`,fJZT{Xqp6F~5r@6",
+                                                "inputs": {
+                                                  "CONDITION": {
+                                                    "block": {
+                                                      "type": "GetMCOMState",
+                                                      "id": "yJrAUG8)F.yHUFCIvWn~",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "EventMCOM",
+                                                            "id": "-Q9fCm-ILg9LZZ~cmcr_"
+                                                          }
+                                                        },
+                                                        "VALUE-1": {
+                                                          "block": {
+                                                            "type": "MCOMStateBoolItem",
+                                                            "id": "#+Hs]^`d^hh)UdtMO8Bs",
+                                                            "fields": {
+                                                              "VALUE-0": "MCOMStateBool",
+                                                              "VALUE-1": "IsArming"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "conditionBlock",
+                                                    "id": "gz44CrUN^E%!IaZ#T|bH",
+                                                    "inputs": {
+                                                      "CONDITION": {
+                                                        "block": {
+                                                          "type": "Equals",
+                                                          "id": "@sVO09Or%{ZiK-ZgiyyD",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "GetCurrentOwnerTeamID",
+                                                                "id": "WGhDTXZ;5uk3Xrb_b-po",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "EventMCOM",
+                                                                      "id": "|u77jBNpcke?1!X)6?hm"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "VALUE-1": {
+                                                              "block": {
+                                                                "type": "GetTeamId",
+                                                                "id": "hqo;B8G8T4y_lP9$JaD@",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "Number",
+                                                                      "id": "DDs%@(b3`KlPd_uW*=||",
+                                                                      "fields": {
+                                                                        "NUM": 2
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "ACTIONS": {
+                                              "block": {
+                                                "type": "ShowEventGameModeMessage",
+                                                "id": "HUsg!xt+n%mZY.)Nfd{L",
+                                                "inputs": {
+                                                  "VALUE-0": {
+                                                    "block": {
+                                                      "type": "Message",
+                                                      "id": "-qn(_,7/:js0(~GaQ6[1",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "Text",
+                                                            "id": "JBP`m:g=#4[EE::v;_Gm",
+                                                            "fields": {
+                                                              "TEXT": "YOUR MCOM IS BEING ARMED!!"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "GetTeamId",
+                                                      "id": "=bc{5U0}gAVE`H~{vt{c",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "Number",
+                                                            "id": "w7G4E;Zs3RFX,dYyCHcp",
+                                                            "fields": {
+                                                              "NUM": 2
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "ShowEventGameModeMessage",
+                                                    "id": "~p{9_(z2=4mYAE,-G+x@",
+                                                    "inputs": {
+                                                      "VALUE-0": {
+                                                        "block": {
+                                                          "type": "Message",
+                                                          "id": "j*H-GA=g?=$}Ln@YhoHL",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "Text",
+                                                                "id": "%QX;^G7!,G2)OsF`3_`S",
+                                                                "fields": {
+                                                                  "TEXT": "YOUR TEAM IS ARMING AN MCOM"
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE-1": {
+                                                        "block": {
+                                                          "type": "GetTeamId",
+                                                          "id": "~!Ud.UZ!}hZt4QQEaS64",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "Number",
+                                                                "id": "@xPK]{f4Q]N[:)ieQKRS",
+                                                                "fields": {
+                                                                  "NUM": 1
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "next": {
+                                            "block": {
+                                              "type": "ruleBlock",
+                                              "id": "`cktT:l$Z=gbsjbW[~]?",
+                                              "extraState": {
+                                                "isOngoingEvent": false
+                                              },
+                                              "fields": {
+                                                "NAME": "onMCOMDestroyedTeam1",
+                                                "EVENTTYPE": "OnMCOMDestroyed"
+                                              },
+                                              "inputs": {
+                                                "CONDITIONS": {
+                                                  "block": {
+                                                    "type": "conditionBlock",
+                                                    "id": "boZs~IRWp$yLhb03H+]d",
+                                                    "inputs": {
+                                                      "CONDITION": {
+                                                        "block": {
+                                                          "type": "Equals",
+                                                          "id": "a;{$$X(fn,0rqSeBqMDz",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "GetCurrentOwnerTeamID",
+                                                                "id": "@8%y455[LgJP;cf$Y1)r",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "EventMCOM",
+                                                                      "id": "VC%^PZw5YYteH?:he[)M"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "VALUE-1": {
+                                                              "block": {
+                                                                "type": "GetTeamId",
+                                                                "id": "QpIT!7qq6c673]uenWjI",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "Number",
+                                                                      "id": "+9Yt!ncG*?oH9beE7{Js",
+                                                                      "fields": {
+                                                                        "NUM": 1
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "ACTIONS": {
+                                                  "block": {
+                                                    "type": "If",
+                                                    "id": "pXBz~()WsWGBt^x4UboD",
+                                                    "extraState": {
+                                                      "elseif": 2,
+                                                      "else": 1
+                                                    },
+                                                    "inputs": {
+                                                      "VALUE-0": {
+                                                        "block": {
+                                                          "type": "Equals",
+                                                          "id": "[a;[M-xwmPd;n.t3d%Qu",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "GetCapturePoint",
+                                                                "id": "sp%z#pbkf$/f2Tx?!UD?",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "MCOMsItem",
+                                                                      "id": "B;h`vR1hqTEIo+Bu*T_q",
+                                                                      "fields": {
+                                                                        "VALUE-0": "MCOMs",
+                                                                        "VALUE-1": "A"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "VALUE-1": {
+                                                              "block": {
+                                                                "type": "EventMCOM",
+                                                                "id": ";f/J4i!v9I[^w-~GHqIT"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "DO": {
+                                                        "block": {
+                                                          "type": "SetVariable",
+                                                          "id": "$EyWiI$KA-[YP+gN4gdz",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "variableReferenceBlock",
+                                                                "id": "5l*I$/kBQ/[QblPw!FQ)",
+                                                                "extraState": {
+                                                                  "isObjectVar": true
+                                                                },
+                                                                "fields": {
+                                                                  "OBJECTTYPE": "TeamId",
+                                                                  "VAR": {
+                                                                    "id": "Af/]xC-27o?f.4N7|f[f"
+                                                                  }
+                                                                },
+                                                                "inputs": {
+                                                                  "OBJECT": {
+                                                                    "block": {
+                                                                      "type": "GetTeamId",
+                                                                      "id": "$E,j#tv0sX#shsYPr!%f",
+                                                                      "inputs": {
+                                                                        "VALUE-0": {
+                                                                          "block": {
+                                                                            "type": "Number",
+                                                                            "id": "=fvV?N.Oz7FOjkY?]nCR",
+                                                                            "fields": {
+                                                                              "NUM": 1
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "VALUE-1": {
+                                                              "block": {
+                                                                "type": "GetCapturePoint",
+                                                                "id": "~%6R~nGe*n:MO0oZs{hn",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "MCOMsItem",
+                                                                      "id": "NqDTzr/,1^7sF4}Xw[-@",
+                                                                      "fields": {
+                                                                        "VALUE-0": "MCOMs",
+                                                                        "VALUE-1": "B"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "IF1": {
+                                                        "block": {
+                                                          "type": "Equals",
+                                                          "id": "!A./Rk8A2%}5Eiw,}Wy4",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "GetCapturePoint",
+                                                                "id": "xXSd$a{dWGK~XLRF?N,o",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "MCOMsItem",
+                                                                      "id": "**giXw6NW7iPr5pa7)qh",
+                                                                      "fields": {
+                                                                        "VALUE-0": "MCOMs",
+                                                                        "VALUE-1": "B"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "VALUE-1": {
+                                                              "block": {
+                                                                "type": "EventMCOM",
+                                                                "id": "~Y]9GVPne%C=q5+:Q/$B"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "DO1": {
+                                                        "block": {
+                                                          "type": "SetVariable",
+                                                          "id": "z2A#yja~SgjPSFRx_T8/",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "variableReferenceBlock",
+                                                                "id": "*LU49DOt{AtB}qr^*qVz",
+                                                                "extraState": {
+                                                                  "isObjectVar": true
+                                                                },
+                                                                "fields": {
+                                                                  "OBJECTTYPE": "TeamId",
+                                                                  "VAR": {
+                                                                    "id": "Af/]xC-27o?f.4N7|f[f"
+                                                                  }
+                                                                },
+                                                                "inputs": {
+                                                                  "OBJECT": {
+                                                                    "block": {
+                                                                      "type": "GetTeamId",
+                                                                      "id": "A5pI`NM~!qN6d#~XtX[/",
+                                                                      "inputs": {
+                                                                        "VALUE-0": {
+                                                                          "block": {
+                                                                            "type": "Number",
+                                                                            "id": "w2g|Z9%Ad[=//Ilc~qN7",
+                                                                            "fields": {
+                                                                              "NUM": 1
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "VALUE-1": {
+                                                              "block": {
+                                                                "type": "GetCapturePoint",
+                                                                "id": "4mbG`hR$Kq]gQ1w-PG3c",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "MCOMsItem",
+                                                                      "id": "Bw*j@G`DG1y*:QPm{mVn",
+                                                                      "fields": {
+                                                                        "VALUE-0": "MCOMs",
+                                                                        "VALUE-1": "C"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "IF2": {
+                                                        "block": {
+                                                          "type": "Equals",
+                                                          "id": "d]vt;f%S?,yLZ_J*)cWh",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "GetCapturePoint",
+                                                                "id": "^qAXz:z_H*1F+a3n)2qT",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "MCOMsItem",
+                                                                      "id": "^.5QNJDwX~;Yqq1JdU|K",
+                                                                      "fields": {
+                                                                        "VALUE-0": "MCOMs",
+                                                                        "VALUE-1": "C"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "VALUE-1": {
+                                                              "block": {
+                                                                "type": "EventMCOM",
+                                                                "id": "0D*klQn|~r(GE!0FyL6U"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "DO2": {
+                                                        "block": {
+                                                          "type": "ShowEventGameModeMessage",
+                                                          "id": "I{E?mb%E[|ElV%:[79Xu",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "Message",
+                                                                "id": "]qS0#x{98UB$2~r{C_gQ",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "Text",
+                                                                      "id": "O{XY%0;Ia;Xtw49sBu[}",
+                                                                      "fields": {
+                                                                        "TEXT": "GAME OVER ALL MCOMS DESTROYED!"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "next": {
+                                                      "block": {
+                                                        "type": "EnableObjective",
+                                                        "id": "{|oV_KKZsD/w^p{C?^2i",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "GetVariable",
+                                                              "id": "8v6I3p=+lL{%L}karU?;",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "variableReferenceBlock",
+                                                                    "id": "q^e_m,0^BEp37^Z}%qU0",
+                                                                    "extraState": {
+                                                                      "isObjectVar": true
+                                                                    },
+                                                                    "fields": {
+                                                                      "OBJECTTYPE": "TeamId",
+                                                                      "VAR": {
+                                                                        "id": "Af/]xC-27o?f.4N7|f[f"
+                                                                      }
+                                                                    },
+                                                                    "inputs": {
+                                                                      "OBJECT": {
+                                                                        "block": {
+                                                                          "type": "GetTeamId",
+                                                                          "id": "E,Gqy^za.`W6B*_(u6Gv",
+                                                                          "inputs": {
+                                                                            "VALUE-0": {
+                                                                              "block": {
+                                                                                "type": "Number",
+                                                                                "id": "xSYVFI1K7vYP+fKQxZ0c",
+                                                                                "fields": {
+                                                                                  "NUM": 1
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE-1": {
+                                                            "block": {
+                                                              "type": "Boolean",
+                                                              "id": ";!1)U!a{FAp|PldSu^R%",
+                                                              "fields": {
+                                                                "BOOL": "TRUE"
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "next": {
+                                                          "block": {
+                                                            "type": "SetGamemodeScore",
+                                                            "id": "s$eW*HRVW/~Kbn};$n6*",
+                                                            "inputs": {
+                                                              "VALUE-0": {
+                                                                "block": {
+                                                                  "type": "GetTeamId",
+                                                                  "id": "WgSLKClE/i`:5tMcKT|2",
+                                                                  "inputs": {
+                                                                    "VALUE-0": {
+                                                                      "block": {
+                                                                        "type": "Number",
+                                                                        "id": "NKC%K2=S)39LaEs=,0R}",
+                                                                        "fields": {
+                                                                          "NUM": 2
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "VALUE-1": {
+                                                                "block": {
+                                                                  "type": "Add",
+                                                                  "id": "l7?3^`2y/1iq9,zeK9Nt",
+                                                                  "inputs": {
+                                                                    "VALUE-0": {
+                                                                      "block": {
+                                                                        "type": "GetGamemodeScore",
+                                                                        "id": "m-3BXq[5ZxO2u6BT$f0z",
+                                                                        "inputs": {
+                                                                          "VALUE-0": {
+                                                                            "block": {
+                                                                              "type": "GetTeamId",
+                                                                              "id": "M|5rEvTMkhc^Lu-`R3tb",
+                                                                              "inputs": {
+                                                                                "VALUE-0": {
+                                                                                  "block": {
+                                                                                    "type": "Number",
+                                                                                    "id": "[HV82nmKPiWcG$0IZ5?e",
+                                                                                    "fields": {
+                                                                                      "NUM": 2
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "VALUE-1": {
+                                                                      "block": {
+                                                                        "type": "Number",
+                                                                        "id": "ypF{33G+SR|/ct|Y[9_H",
+                                                                        "fields": {
+                                                                          "NUM": 1
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "next": {
+                                                "block": {
+                                                  "type": "ruleBlock",
+                                                  "id": "]#uiAs]n6|_4*Nm3NyGk",
+                                                  "extraState": {
+                                                    "isOngoingEvent": false
+                                                  },
+                                                  "fields": {
+                                                    "NAME": "onMCOMDestroyedTeam2",
+                                                    "EVENTTYPE": "OnMCOMDestroyed"
+                                                  },
+                                                  "inputs": {
+                                                    "CONDITIONS": {
+                                                      "block": {
+                                                        "type": "conditionBlock",
+                                                        "id": "d/e2wXv}`d|(,1d)PN0+",
+                                                        "inputs": {
+                                                          "CONDITION": {
+                                                            "block": {
+                                                              "type": "Equals",
+                                                              "id": "P09}u9k8=7TeqZ[T;ZK~",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "GetCurrentOwnerTeamID",
+                                                                    "id": "V`,O*[o9TiP.R}YA#9~a",
+                                                                    "inputs": {
+                                                                      "VALUE-0": {
+                                                                        "block": {
+                                                                          "type": "EventMCOM",
+                                                                          "id": "q=u+6j`wKQjQ(Ay{.v|%"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE-1": {
+                                                                  "block": {
+                                                                    "type": "GetTeamId",
+                                                                    "id": "L~f1rljh=F-*hjs_(wdV",
+                                                                    "inputs": {
+                                                                      "VALUE-0": {
+                                                                        "block": {
+                                                                          "type": "Number",
+                                                                          "id": "Ji4GoQt!wYkvT+%ommHY",
+                                                                          "fields": {
+                                                                            "NUM": 2
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "ACTIONS": {
+                                                      "block": {
+                                                        "type": "If",
+                                                        "id": "lu{TC4Ll}F}0#JrXU}Ph",
+                                                        "extraState": {
+                                                          "elseif": 2,
+                                                          "else": 1
+                                                        },
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "Equals",
+                                                              "id": "#)/zhlXF(^qzHB+4]ny}",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "GetCapturePoint",
+                                                                    "id": "rCd4Xqg*=TT~oq/rPIF(",
+                                                                    "inputs": {
+                                                                      "VALUE-0": {
+                                                                        "block": {
+                                                                          "type": "MCOMsItem",
+                                                                          "id": "LemWp_5=3ZfpH/O7/@Za",
+                                                                          "fields": {
+                                                                            "VALUE-0": "MCOMs",
+                                                                            "VALUE-1": "D"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE-1": {
+                                                                  "block": {
+                                                                    "type": "EventMCOM",
+                                                                    "id": "%//r=|Eta`9hpdqRgI+;"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "DO": {
+                                                            "block": {
+                                                              "type": "SetVariable",
+                                                              "id": "bTqQA[bSoH4h8x`JgRnV",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "variableReferenceBlock",
+                                                                    "id": "K/4HvVpdrb@Iu6ef0K5,",
+                                                                    "extraState": {
+                                                                      "isObjectVar": true
+                                                                    },
+                                                                    "fields": {
+                                                                      "OBJECTTYPE": "TeamId",
+                                                                      "VAR": {
+                                                                        "id": "Af/]xC-27o?f.4N7|f[f"
+                                                                      }
+                                                                    },
+                                                                    "inputs": {
+                                                                      "OBJECT": {
+                                                                        "block": {
+                                                                          "type": "GetTeamId",
+                                                                          "id": "Hmr(s*WN8p]ZcU-}dDjE",
+                                                                          "inputs": {
+                                                                            "VALUE-0": {
+                                                                              "block": {
+                                                                                "type": "Number",
+                                                                                "id": "/sFK~vf9FW*wt^+4O$R1",
+                                                                                "fields": {
+                                                                                  "NUM": 2
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE-1": {
+                                                                  "block": {
+                                                                    "type": "GetCapturePoint",
+                                                                    "id": ",W2hJVa3YMaMYAQ4;|V!",
+                                                                    "inputs": {
+                                                                      "VALUE-0": {
+                                                                        "block": {
+                                                                          "type": "MCOMsItem",
+                                                                          "id": "we0Oxqh[@pdS9MSdMuop",
+                                                                          "fields": {
+                                                                            "VALUE-0": "MCOMs",
+                                                                            "VALUE-1": "E"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "IF1": {
+                                                            "block": {
+                                                              "type": "Equals",
+                                                              "id": "I)IdLqKkwx(OO,(kURw]",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "GetCapturePoint",
+                                                                    "id": "[D`P7)[gR(QrlAo+@=?~",
+                                                                    "inputs": {
+                                                                      "VALUE-0": {
+                                                                        "block": {
+                                                                          "type": "MCOMsItem",
+                                                                          "id": "pG`x)Z?+9Y.yXs`eQ;UX",
+                                                                          "fields": {
+                                                                            "VALUE-0": "MCOMs",
+                                                                            "VALUE-1": "E"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE-1": {
+                                                                  "block": {
+                                                                    "type": "EventMCOM",
+                                                                    "id": "CyV5b,)=[~pA(j?j(Bk$"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "DO1": {
+                                                            "block": {
+                                                              "type": "SetVariable",
+                                                              "id": "yZm:O%%9]c/cI(.,jF$5",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "variableReferenceBlock",
+                                                                    "id": "_HEHFI@iI2Ixkq:C=a!X",
+                                                                    "extraState": {
+                                                                      "isObjectVar": true
+                                                                    },
+                                                                    "fields": {
+                                                                      "OBJECTTYPE": "TeamId",
+                                                                      "VAR": {
+                                                                        "id": "Af/]xC-27o?f.4N7|f[f"
+                                                                      }
+                                                                    },
+                                                                    "inputs": {
+                                                                      "OBJECT": {
+                                                                        "block": {
+                                                                          "type": "GetTeamId",
+                                                                          "id": "8{~B8q#(](Gt*yY#=/KL",
+                                                                          "inputs": {
+                                                                            "VALUE-0": {
+                                                                              "block": {
+                                                                                "type": "Number",
+                                                                                "id": "gBf;G$^F_n6y839rOF?0",
+                                                                                "fields": {
+                                                                                  "NUM": 2
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE-1": {
+                                                                  "block": {
+                                                                    "type": "GetCapturePoint",
+                                                                    "id": "Fku:S{p|BY3pfDaYhw[a",
+                                                                    "inputs": {
+                                                                      "VALUE-0": {
+                                                                        "block": {
+                                                                          "type": "MCOMsItem",
+                                                                          "id": "x}M7BF7Nm%G_w`id2TiN",
+                                                                          "fields": {
+                                                                            "VALUE-0": "MCOMs",
+                                                                            "VALUE-1": "F"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "IF2": {
+                                                            "block": {
+                                                              "type": "Equals",
+                                                              "id": "k764,Yw$Y@{kK[X}f~38",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "GetCapturePoint",
+                                                                    "id": "#k]9JN|]1#VZiVbSwcd_",
+                                                                    "inputs": {
+                                                                      "VALUE-0": {
+                                                                        "block": {
+                                                                          "type": "MCOMsItem",
+                                                                          "id": "ogAN@=F|zYQ5pw)wMyzm",
+                                                                          "fields": {
+                                                                            "VALUE-0": "MCOMs",
+                                                                            "VALUE-1": "F"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE-1": {
+                                                                  "block": {
+                                                                    "type": "EventMCOM",
+                                                                    "id": "K6)7M];?uYkTmAIgv~V;"
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "DO2": {
+                                                            "block": {
+                                                              "type": "ShowEventGameModeMessage",
+                                                              "id": "xV[W(w9WmOr.{zRZhi(F",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "Message",
+                                                                    "id": "IZcnu8Oa](#V-@fA@}j*",
+                                                                    "inputs": {
+                                                                      "VALUE-0": {
+                                                                        "block": {
+                                                                          "type": "Text",
+                                                                          "id": ":[rwk:%rt3E}-Had+!~n",
+                                                                          "fields": {
+                                                                            "TEXT": "GAME OVER ALL MCOMS DESTROYED!"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "next": {
+                                                          "block": {
+                                                            "type": "EnableObjective",
+                                                            "id": "S*-}+C8o:U/8V)T=3mG1",
+                                                            "inputs": {
+                                                              "VALUE-0": {
+                                                                "block": {
+                                                                  "type": "GetVariable",
+                                                                  "id": "T.+jFS)RChQrqDEP8jHa",
+                                                                  "inputs": {
+                                                                    "VALUE-0": {
+                                                                      "block": {
+                                                                        "type": "variableReferenceBlock",
+                                                                        "id": "/Orz4(!cf`pG#sbP-n$S",
+                                                                        "extraState": {
+                                                                          "isObjectVar": true
+                                                                        },
+                                                                        "fields": {
+                                                                          "OBJECTTYPE": "TeamId",
+                                                                          "VAR": {
+                                                                            "id": "Af/]xC-27o?f.4N7|f[f"
+                                                                          }
+                                                                        },
+                                                                        "inputs": {
+                                                                          "OBJECT": {
+                                                                            "block": {
+                                                                              "type": "GetTeamId",
+                                                                              "id": "+)ic.dUvQ4YaKvM.5k=j",
+                                                                              "inputs": {
+                                                                                "VALUE-0": {
+                                                                                  "block": {
+                                                                                    "type": "Number",
+                                                                                    "id": "W*Ipn(i2haSD`8ix!rDv",
+                                                                                    "fields": {
+                                                                                      "NUM": 2
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "VALUE-1": {
+                                                                "block": {
+                                                                  "type": "Boolean",
+                                                                  "id": "DU]Uc=iO-7s%5C`EoZS`",
+                                                                  "fields": {
+                                                                    "BOOL": "TRUE"
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "next": {
+                                                              "block": {
+                                                                "type": "SetGamemodeScore",
+                                                                "id": "WiLj7)x`].!;wLLzIU|o",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "GetTeamId",
+                                                                      "id": "5@;xW@D~[Ihb7L1I:fln",
+                                                                      "inputs": {
+                                                                        "VALUE-0": {
+                                                                          "block": {
+                                                                            "type": "Number",
+                                                                            "id": "9}S+^+d{!8iGn(qPCP5=",
+                                                                            "fields": {
+                                                                              "NUM": 1
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "VALUE-1": {
+                                                                    "block": {
+                                                                      "type": "Add",
+                                                                      "id": ")l!:~/rC_A(luxoNFX0;",
+                                                                      "inputs": {
+                                                                        "VALUE-0": {
+                                                                          "block": {
+                                                                            "type": "GetGamemodeScore",
+                                                                            "id": "aot$~aTvU(=HH1bg#mT}",
+                                                                            "inputs": {
+                                                                              "VALUE-0": {
+                                                                                "block": {
+                                                                                  "type": "GetTeamId",
+                                                                                  "id": "}{io?|mFifdu+#V;lphS",
+                                                                                  "inputs": {
+                                                                                    "VALUE-0": {
+                                                                                      "block": {
+                                                                                        "type": "Number",
+                                                                                        "id": "~{Q/Mc@(3~w2M[puTTF`",
+                                                                                        "fields": {
+                                                                                          "NUM": 1
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "VALUE-1": {
+                                                                          "block": {
+                                                                            "type": "Number",
+                                                                            "id": "soB*Am;Onk=K}yiRPuQ]",
+                                                                            "fields": {
+                                                                              "NUM": 1
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "subroutineBlock",
+        "id": "M)9tsOJsc_,+IK|b],b.",
+        "x": -2112,
+        "y": -102,
+        "extraState": {
+          "subroutineName": "exampleUsingMCOMArray",
+          "parameters": []
+        },
+        "fields": {
+          "SUBROUTINE_NAME": "exampleUsingMCOMArray"
+        }
+      },
+      {
+        "type": "subroutineBlock",
+        "id": "qXI4jQ**sSE7jKdZ20+K",
+        "x": -378,
+        "y": 20,
+        "extraState": {
+          "subroutineName": "initialiseMCOMs",
+          "parameters": []
+        },
+        "fields": {
+          "SUBROUTINE_NAME": "initialiseMCOMs"
+        },
+        "inputs": {
+          "ACTIONS": {
+            "block": {
+              "type": "If",
+              "id": "BLC`~I1q:!I`0-jc]@8+",
+              "extraState": {},
+              "inputs": {
+                "VALUE-0": {
+                  "block": {
+                    "type": "IsCurrentMap",
+                    "id": "4[qhT.GzxEHun}Vd+gmh",
+                    "inputs": {
+                      "VALUE-0": {
+                        "block": {
+                          "type": "MapsItem",
+                          "id": "Eu,8euIVIv)*RormZm.)",
+                          "fields": {
+                            "VALUE-0": "Maps",
+                            "VALUE-1": "Orbital"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "DO": {
+                  "block": {
+                    "type": "Teleport",
+                    "id": "jq-:^[H7b8-;2UHr@y]~",
+                    "inputs": {
+                      "VALUE-0": {
+                        "block": {
+                          "type": "GetCapturePoint",
+                          "id": "i}(UNd`Jiu]A.vM@$!6q",
+                          "inputs": {
+                            "VALUE-0": {
+                              "block": {
+                                "type": "MCOMsItem",
+                                "id": "%nDl}japkd}ZH91H}i,.",
+                                "fields": {
+                                  "VALUE-0": "MCOMs",
+                                  "VALUE-1": "A"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "VALUE-1": {
+                        "block": {
+                          "type": "CreateVector",
+                          "id": "z$D:oj$$YeELdeF36c)S",
+                          "inputs": {
+                            "VALUE-0": {
+                              "block": {
+                                "type": "Number",
+                                "id": ";nqdt7{G|)XY7Y+^h!mF",
+                                "fields": {
+                                  "NUM": 8
+                                }
+                              }
+                            },
+                            "VALUE-1": {
+                              "block": {
+                                "type": "Number",
+                                "id": "8LoWDY.FI10bYMCw/X,I",
+                                "fields": {
+                                  "NUM": 105
+                                }
+                              }
+                            },
+                            "VALUE-2": {
+                              "block": {
+                                "type": "Number",
+                                "id": "p|Wl~p=|-abNv|_{:fV[",
+                                "fields": {
+                                  "NUM": 752
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "VALUE-2": {
+                        "block": {
+                          "type": "Number",
+                          "id": "w,cD;8@v@T:=:-g8xho?",
+                          "fields": {
+                            "NUM": 0
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "Teleport",
+                        "id": "56T;:N8N@Px5m5kWjWhN",
+                        "inputs": {
+                          "VALUE-0": {
+                            "block": {
+                              "type": "GetCapturePoint",
+                              "id": "}[s2hPU[o;c3iOU4b,Rk",
+                              "inputs": {
+                                "VALUE-0": {
+                                  "block": {
+                                    "type": "MCOMsItem",
+                                    "id": "82]Icw4;qGRwK8~e]^qn",
+                                    "fields": {
+                                      "VALUE-0": "MCOMs",
+                                      "VALUE-1": "B"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "VALUE-1": {
+                            "block": {
+                              "type": "CreateVector",
+                              "id": "T6?m=8Xb^e4wc0OCGJ-.",
+                              "inputs": {
+                                "VALUE-0": {
+                                  "block": {
+                                    "type": "Number",
+                                    "id": "):*LH%A2rxGY04?!)Jq#",
+                                    "fields": {
+                                      "NUM": -19
+                                    }
+                                  }
+                                },
+                                "VALUE-1": {
+                                  "block": {
+                                    "type": "Number",
+                                    "id": "nI,]7XR=D3zD*}dnXH|$",
+                                    "fields": {
+                                      "NUM": 105
+                                    }
+                                  }
+                                },
+                                "VALUE-2": {
+                                  "block": {
+                                    "type": "Number",
+                                    "id": "QgZ;fSYJt.X|/JngTwnl",
+                                    "fields": {
+                                      "NUM": 794
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "VALUE-2": {
+                            "block": {
+                              "type": "Number",
+                              "id": "t3^F]d|3N@B}2(iB:7+[",
+                              "fields": {
+                                "NUM": 0
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "Teleport",
+                            "id": ":-6`*dzW]SIi}-5Acyy-",
+                            "inputs": {
+                              "VALUE-0": {
+                                "block": {
+                                  "type": "GetCapturePoint",
+                                  "id": "5ov3=Hq5!yACEYm5o:br",
+                                  "inputs": {
+                                    "VALUE-0": {
+                                      "block": {
+                                        "type": "MCOMsItem",
+                                        "id": "NXh;I|$g^s(qY,-V5Oj^",
+                                        "fields": {
+                                          "VALUE-0": "MCOMs",
+                                          "VALUE-1": "C"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "VALUE-1": {
+                                "block": {
+                                  "type": "CreateVector",
+                                  "id": ":sXV1O_KlO^?Ia5L=Z$h",
+                                  "inputs": {
+                                    "VALUE-0": {
+                                      "block": {
+                                        "type": "Number",
+                                        "id": "WBBkLA5+mcjc3q_a#YS.",
+                                        "fields": {
+                                          "NUM": -51
+                                        }
+                                      }
+                                    },
+                                    "VALUE-1": {
+                                      "block": {
+                                        "type": "Number",
+                                        "id": "EYM#B1-)nZta`M2}RCCs",
+                                        "fields": {
+                                          "NUM": 103
+                                        }
+                                      }
+                                    },
+                                    "VALUE-2": {
+                                      "block": {
+                                        "type": "Number",
+                                        "id": "*5NO3?0zaca$i0Ub*WMa",
+                                        "fields": {
+                                          "NUM": 818
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "VALUE-2": {
+                                "block": {
+                                  "type": "Number",
+                                  "id": "Lebn=g%FU#,5Yq3~EQ?b",
+                                  "fields": {
+                                    "NUM": 0
+                                  }
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "type": "Teleport",
+                                "id": "C5pSK|3hNsX!?]`00mr_",
+                                "inputs": {
+                                  "VALUE-0": {
+                                    "block": {
+                                      "type": "GetCapturePoint",
+                                      "id": "e(9CqqOa.K(e-D[QYk5x",
+                                      "inputs": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "MCOMsItem",
+                                            "id": "AfY1Z4M{2xDqzXQI)7_s",
+                                            "fields": {
+                                              "VALUE-0": "MCOMs",
+                                              "VALUE-1": "D"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "VALUE-1": {
+                                    "block": {
+                                      "type": "CreateVector",
+                                      "id": ";9jk`zctgx_db]nBO4;d",
+                                      "inputs": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "Number",
+                                            "id": "~]Eyr]hK!w_[:+OqJSp_",
+                                            "fields": {
+                                              "NUM": 22
+                                            }
+                                          }
+                                        },
+                                        "VALUE-1": {
+                                          "block": {
+                                            "type": "Number",
+                                            "id": "U}=J@owme#N}naVoZ06;",
+                                            "fields": {
+                                              "NUM": 105
+                                            }
+                                          }
+                                        },
+                                        "VALUE-2": {
+                                          "block": {
+                                            "type": "Number",
+                                            "id": "w!;Ip:a2+~L#]wq|IZ@h",
+                                            "fields": {
+                                              "NUM": 742
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "VALUE-2": {
+                                    "block": {
+                                      "type": "Number",
+                                      "id": "wd0Nk!/Pnyw9[[yXeBt7",
+                                      "fields": {
+                                        "NUM": 0
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "Teleport",
+                                    "id": "uUW0XvDKvm47H3[$H/7S",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "GetCapturePoint",
+                                          "id": "L[#WpG;D{s/qkGBgwwWI",
+                                          "inputs": {
+                                            "VALUE-0": {
+                                              "block": {
+                                                "type": "MCOMsItem",
+                                                "id": "UD)gWMB9`+XlaU6hpNwB",
+                                                "fields": {
+                                                  "VALUE-0": "MCOMs",
+                                                  "VALUE-1": "E"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "VALUE-1": {
+                                        "block": {
+                                          "type": "CreateVector",
+                                          "id": "2|?5s|*+72HFt_f1J:{{",
+                                          "inputs": {
+                                            "VALUE-0": {
+                                              "block": {
+                                                "type": "Number",
+                                                "id": "(,ny`ET+.b]dlt]j[fwv",
+                                                "fields": {
+                                                  "NUM": 60
+                                                }
+                                              }
+                                            },
+                                            "VALUE-1": {
+                                              "block": {
+                                                "type": "Number",
+                                                "id": "khkuTwLJ/T1JHaV5$Wb`",
+                                                "fields": {
+                                                  "NUM": 105
+                                                }
+                                              }
+                                            },
+                                            "VALUE-2": {
+                                              "block": {
+                                                "type": "Number",
+                                                "id": "D`5^MnM.dXGB@a^7e85,",
+                                                "fields": {
+                                                  "NUM": 711
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "VALUE-2": {
+                                        "block": {
+                                          "type": "Number",
+                                          "id": "mEs8HT8LkVLIxJ5q.O+q",
+                                          "fields": {
+                                            "NUM": 0
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "Teleport",
+                                        "id": "rA}Rex_O{k533v]9ITJ8",
+                                        "inputs": {
+                                          "VALUE-0": {
+                                            "block": {
+                                              "type": "GetCapturePoint",
+                                              "id": ".C^ylA)6!|Sv!-CtlX@1",
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "MCOMsItem",
+                                                    "id": "=p.([.:9N)T{%rb.MSy(",
+                                                    "fields": {
+                                                      "VALUE-0": "MCOMs",
+                                                      "VALUE-1": "F"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "VALUE-1": {
+                                            "block": {
+                                              "type": "CreateVector",
+                                              "id": "]_xt9bo^a+bZ$@6pxc;?",
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "Number",
+                                                    "id": "H$cw8useh1iZ$dvY!-L,",
+                                                    "fields": {
+                                                      "NUM": 86
+                                                    }
+                                                  }
+                                                },
+                                                "VALUE-1": {
+                                                  "block": {
+                                                    "type": "Number",
+                                                    "id": "WL=/(C:VK_#PLY4+wcVG",
+                                                    "fields": {
+                                                      "NUM": 105
+                                                    }
+                                                  }
+                                                },
+                                                "VALUE-2": {
+                                                  "block": {
+                                                    "type": "Number",
+                                                    "id": "mNCaui5Pgl%EN~9G;ahs",
+                                                    "fields": {
+                                                      "NUM": 693
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "VALUE-2": {
+                                            "block": {
+                                              "type": "Number",
+                                              "id": "oR^@6;;8A~ay`[%K?v!N",
+                                              "fields": {
+                                                "NUM": 0
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "SetMCOMFuseTime",
+                                            "id": ")29uRls2[d:S=0/T0_v^",
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "GetCapturePoint",
+                                                  "id": "=cp}G+]wUon|bJg*vVfu",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "MCOMsItem",
+                                                        "id": "XgJoe^C@|W],,zHLG2Sq",
+                                                        "fields": {
+                                                          "VALUE-0": "MCOMs",
+                                                          "VALUE-1": "A"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-1": {
+                                                "block": {
+                                                  "type": "Number",
+                                                  "id": "f?S,1*{l+5e*V5sLAi;P",
+                                                  "fields": {
+                                                    "NUM": 10
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "SetMCOMFuseTime",
+                                                "id": "/v^JjIIs$-3eXB}}jDiI",
+                                                "inputs": {
+                                                  "VALUE-0": {
+                                                    "block": {
+                                                      "type": "GetCapturePoint",
+                                                      "id": "B,yMN$EXu7*ovDGD%?y/",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "MCOMsItem",
+                                                            "id": "K=13.N/GuQTS+;EM0w}a",
+                                                            "fields": {
+                                                              "VALUE-0": "MCOMs",
+                                                              "VALUE-1": "B"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "Number",
+                                                      "id": "kcenBe@sd;~W-!2~c(SU",
+                                                      "fields": {
+                                                        "NUM": 20
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "SetMCOMFuseTime",
+                                                    "id": "u5.0O}ff2NgJ?_6{$ukn",
+                                                    "inputs": {
+                                                      "VALUE-0": {
+                                                        "block": {
+                                                          "type": "GetCapturePoint",
+                                                          "id": "7k84~CY27-2v![^-=_w6",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "MCOMsItem",
+                                                                "id": "RDds74:oG}W/7e/AHIHk",
+                                                                "fields": {
+                                                                  "VALUE-0": "MCOMs",
+                                                                  "VALUE-1": "C"
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE-1": {
+                                                        "block": {
+                                                          "type": "Number",
+                                                          "id": "6Fx0p?Cu)fqg~L]mctP!",
+                                                          "fields": {
+                                                            "NUM": 30
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "next": {
+                                                      "block": {
+                                                        "type": "SetMCOMFuseTime",
+                                                        "id": "jtwg.5T7g;3.9Jwirxu/",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "GetCapturePoint",
+                                                              "id": "+Ji1wtCY+Hy$={NwXHOo",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "MCOMsItem",
+                                                                    "id": "%E?D?B7p8YgWHF!b)ozg",
+                                                                    "fields": {
+                                                                      "VALUE-0": "MCOMs",
+                                                                      "VALUE-1": "D"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE-1": {
+                                                            "block": {
+                                                              "type": "Number",
+                                                              "id": "sWN]@jr4P[7j`z{9!h[D",
+                                                              "fields": {
+                                                                "NUM": 10
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "next": {
+                                                          "block": {
+                                                            "type": "SetMCOMFuseTime",
+                                                            "id": ")3l$lPQ7kmkMk-*YmG%?",
+                                                            "inputs": {
+                                                              "VALUE-0": {
+                                                                "block": {
+                                                                  "type": "GetCapturePoint",
+                                                                  "id": "bWg^^D(F5cO8n*e;efp`",
+                                                                  "inputs": {
+                                                                    "VALUE-0": {
+                                                                      "block": {
+                                                                        "type": "MCOMsItem",
+                                                                        "id": "}_e[`M1itIq,?bb}:`CV",
+                                                                        "fields": {
+                                                                          "VALUE-0": "MCOMs",
+                                                                          "VALUE-1": "E"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "VALUE-1": {
+                                                                "block": {
+                                                                  "type": "Number",
+                                                                  "id": "S?drW@uj{fw_8tYu{gDL",
+                                                                  "fields": {
+                                                                    "NUM": 20
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "next": {
+                                                              "block": {
+                                                                "type": "SetMCOMFuseTime",
+                                                                "id": "13gdd(iekns^3co;5k.c",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "GetCapturePoint",
+                                                                      "id": "q}@rmB]SN$5|qQKCdI{r",
+                                                                      "inputs": {
+                                                                        "VALUE-0": {
+                                                                          "block": {
+                                                                            "type": "MCOMsItem",
+                                                                            "id": "8ZzMEl=QJA4HlAK)xYgI",
+                                                                            "fields": {
+                                                                              "VALUE-0": "MCOMs",
+                                                                              "VALUE-1": "F"
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "VALUE-1": {
+                                                                    "block": {
+                                                                      "type": "Number",
+                                                                      "id": "Y6vt=}2dxw|r4mG}wst-",
+                                                                      "fields": {
+                                                                        "NUM": 30
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "variables": [
+    {
+      "name": "CurrentMCOM",
+      "id": "Af/]xC-27o?f.4N7|f[f",
+      "type": "TeamId"
+    }
+  ]
+}
